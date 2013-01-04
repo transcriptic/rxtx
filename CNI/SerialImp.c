@@ -284,6 +284,7 @@ void gnu::io::RXTXPort::Initialize(
 		LEAVE( "RXTXPort:Initialize" );
 		return;
 	}
+	/*
 	if(strcmp(name.release,UTS_RELEASE)!=0)
 	{
 		sprintf( message, LINUX_KERNEL_VERSION_ERROR, UTS_RELEASE,
@@ -291,6 +292,7 @@ void gnu::io::RXTXPort::Initialize(
 		report( message );
 		getchar();
 	}
+	*/
 	LEAVE( "RXTXPort:Initialize" );
 #endif /* DEBUG && __linux__ */
 }
